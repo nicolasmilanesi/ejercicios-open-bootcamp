@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("el resultado de la suma es " + suma(1,1,1));
+        Coche miCoche=new Coche();
+        miCoche.incrementarPuertas();
+        System.out.println("el coche tiene "+miCoche.puertas + " puertas");
+    }
+    static int suma (int a, int b,int c) {
+        int resultado;
+        resultado=a+b+c;
+        return resultado;
+    }
+
+    static class Coche {
+        int puertas=4;
+
+        public void incrementarPuertas(){
+            this.puertas++;
+        }
+
+    }
+}
