@@ -1,0 +1,4 @@
+lista= range(1,101)
+listaInvertida=sorted(lista, reverse=True)
+for numero in listaInvertida:
+    print(numero)
