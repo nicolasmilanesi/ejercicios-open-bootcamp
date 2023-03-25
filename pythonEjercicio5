@@ -1,0 +1,8 @@
+def es_bisiesto(anio):
+	return not anio % 4 and (anio % 100 or not anio % 400)
+	
+booleana = es_bisiesto(2024)
+if booleana == False:
+    print("NO es bisiesto")
+else:
+    print("es bisiesto")
