@@ -1,0 +1,17 @@
+class Alumno:
+    def __init__(self, nombre, nota):
+        self.nombre = nombre
+        self.nota = nota
+
+# Crear objeto
+alumno1 = Alumno(nombre="Nicolas", nota=8)
+
+# Mostrar atributos del objeto por consola
+print(f"Nombre: {alumno1.nombre}")
+print(f"Nota: {alumno1.nota}")
+
+# Condcicional aprobado
+if alumno1.nota >= 7:
+    print("Aprobado")
+else:
+    print("No Aprobado")
