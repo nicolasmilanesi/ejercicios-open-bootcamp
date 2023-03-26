@@ -1,0 +1,23 @@
+class Vehículo:
+    def __init__(self, color, ruedas, puertas):
+        self.color = color
+        self.ruedas = ruedas
+        self.puertas = puertas
+
+
+class Coche(Vehículo):
+    def __init__(self, color, ruedas, puertas, velocidad, cilindrada):
+        super().__init__(color, ruedas, puertas)
+        self.velocidad = velocidad
+        self.cilindrada = cilindrada
+
+
+# Crear objeto de la clase Coche
+mi_coche = Coche(color="Rojo", ruedas=4, puertas=2, velocidad=200, cilindrada=2000)
+
+# Mostrar atributos del objeto por consola
+print(f"Color: {mi_coche.color}")
+print(f"Ruedas: {mi_coche.ruedas}")
+print(f"Puertas: {mi_coche.puertas}")
+print(f"Velocidad: {mi_coche.velocidad}")
+print(f"Cilindrada: {mi_coche.cilindrada}")
